@@ -1,29 +1,18 @@
 function Hero() {
   return (
-    <section className='min-h-screen flex items-center justify-center text-center px-4'>
-      <div>
-        <h1 className='text-5xl font-extrabold text-primary mb-4'>
-          Hey, I’m Duvindu Rathnayake 👋
-        </h1>
-        <p className='text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-xl mx-auto'>
-          A passionate web developer building clean, modern, and responsive
-          applications.
-        </p>
-        <div className='flex justify-center gap-4'>
-          <a
-            href='#projects'
-            className='bg-primary text-white px-6 py-3 rounded hover:bg-primary-dark transition'
-          >
-            View Projects
-          </a>
-          <a
-            href='#contact'
-            className='border border-primary text-primary px-6 py-3 rounded hover:bg-primary hover:text-white transition'
-          >
-            Contact Me
-          </a>
-        </div>
-      </div>
+    <section className='min-h-screen flex flex-col justify-center items-start px-6 sm:px-16 bg-slate-900 text-white'>
+      <h1 className='text-5xl sm:text-6xl font-bold mb-4'>
+        Hi, I’m <span className='text-indigo-400'>Duvindu</span>
+      </h1>
+
+      <h2 className='text-2xl sm:text-3xl text-slate-300 mb-6'>
+        Web Developer • System Analyst • Builder
+      </h2>
+
+      <p className='max-w-xl text-lg text-slate-400 leading-relaxed'>
+        I create clean, responsive web applications and smart digital solutions
+        that solve real-world problems. Welcome to my corner of the web!
+      </p>
     </section>
   );
 }
