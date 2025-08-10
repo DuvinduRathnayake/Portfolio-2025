@@ -1,10 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <script>
+      try {
+        const saved = localStorage.getItem('darkMode');
+        const defaultDark = true; // ⬅️ your default
+        const shouldDark = saved === null ? defaultDark : saved === 'true';
+        if (shouldDark) document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+      } catch (e) {
+        document.documentElement.classList.add('dark'); // safe fallback
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

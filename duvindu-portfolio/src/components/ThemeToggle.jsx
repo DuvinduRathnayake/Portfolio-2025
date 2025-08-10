@@ -1,30 +1,28 @@
 import { useEffect, useState } from 'react';
 
 export default function ThemeToggle() {
-  const [darkMode, setDarkMode] = useState(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      return localStorage.getItem('theme') === 'dark';
-    }
-    return false;
-  });
+  const getInitial = () => {
+    const saved = localStorage.getItem('darkMode');
+    if (saved !== null) return saved === 'true';
+    return true; // ⬅️ default to DARK when first visit
+  };
+
+  const [darkMode, setDarkMode] = useState(getInitial);
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    if (darkMode) {
-      root.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      root.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
+    document.documentElement.classList.toggle('dark', darkMode);
+    localStorage.setItem('darkMode', String(darkMode));
   }, [darkMode]);
 
   return (
     <button
-      onClick={() => setDarkMode(!darkMode)}
-      className='fixed top-4 right-4 bg-primary text-white px-4 py-2 rounded-md shadow-md z-50'
+      onClick={() => setDarkMode((v) => !v)}
+      className='inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1.5 text-sm text-slate-700 transition hover:bg-slate-100 active:scale-95 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800'
+      aria-label='Toggle dark mode'
+      title='Toggle theme'
     >
-      {darkMode ? '☀️ Light' : '🌙 Dark'}
+      <span className='text-xs'>{darkMode ? '☀︎' : '☾'}</span>
+      <span className='hidden sm:inline'>{darkMode ? 'Light' : 'Dark'}</span>
     </button>
   );
 }
