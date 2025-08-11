@@ -19,7 +19,12 @@ import {
   SiGit,
   SiPostman,
   SiFigma,
+  SiPhp,
+  SiWordpress,
 } from 'react-icons/si';
+import { FaJava } from 'react-icons/fa6';
+import { DiJavascript1 } from 'react-icons/di';
+import { FaWordpress, FaHtml5, FaCss3, FaBootstrap } from 'react-icons/fa';
 
 // Map exact labels -> icons (only those that exist)
 // Using ".NET" icon to represent C# / SQL Server / Azure / VS Code for now
@@ -32,34 +37,56 @@ const iconMap = {
   '.NET 6': SiDotnet,
   '.NET': SiDotnet,
   'ASP.NET MVC': SiDotnet,
-  CSharp: SiDotnet, // fallback
-
+  CSharp: SiDotnet,
+  Java: FaJava,
+  Php: SiPhp,
+  JavaScript: DiJavascript1,
+  Html: FaHtml5,
+  Css: FaCss3,
+  Bootstrap: FaBootstrap,
   Node: SiNodedotjs,
 
-  'SQL Server': SiDotnet, // fallback
+  'SQL Server': SiDotnet,
   PostgreSQL: SiPostgresql,
   MongoDB: SiMongodb,
 
-  Azure: SiDotnet, // fallback
-  'Azure Fundamentals': SiDotnet, // fallback
+  Azure: SiDotnet,
+  'Azure Fundamentals': SiDotnet,
   Vercel: SiVercel,
   'GitHub Actions': SiGithubactions,
 
   Git: SiGit,
   Postman: SiPostman,
   Figma: SiFigma,
-  'VS Code': SiDotnet, // fallback
+  'VS Code': SiDotnet,
+  Wordpress: FaWordpress,
 };
 
 // Your skills, grouped for readability
 const groups = [
   {
     name: 'Frontend',
-    items: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
+    items: [
+      'Html',
+      'Css',
+      'React',
+      'Vite',
+      'Tailwind CSS',
+      'Bootstrap',
+      'Framer Motion',
+    ],
   },
   {
     name: 'Backend',
-    items: ['.NET 6', 'ASP.NET MVC', 'Node', 'CSharp'], // CSharp uses .NET icon
+    items: [
+      '.NET 6',
+      'ASP.NET MVC',
+      'Node',
+      'CSharp',
+      'Java',
+      'Php',
+      'JavaScript',
+    ], // CSharp uses .NET icon
   },
   {
     name: 'Database',
@@ -71,7 +98,7 @@ const groups = [
   },
   {
     name: 'Tools',
-    items: ['Git', 'Postman', 'Figma', 'VS Code'],
+    items: ['Git', 'Postman', 'Figma', 'VS Code', 'Wordpress'],
   },
 ];
 

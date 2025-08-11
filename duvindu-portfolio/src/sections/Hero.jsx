@@ -46,7 +46,7 @@ export default function Hero() {
               View Projects
             </a>
             <a
-              href='/Duvindu_Rathnayake_CV.pdf'
+              href='/Duvindu Rathnayake- Resume.pdf'
               className='rounded-lg border border-white/40 px-4 py-2 transition hover:bg-white/90 hover:text-slate-900'
             >
               Download CV

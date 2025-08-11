@@ -7,6 +7,7 @@ import Skills from './sections/Skills';
 import Contact from './sections/Contact';
 import Certificates from './sections/Certificates';
 import Footer from './sections/Footer';
+import Education from './sections/Education';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <About />
         <Projects />
         <Skills />
+        <Education />
         <Certificates />
         <Contact />
       </main>
