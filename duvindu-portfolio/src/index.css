@@ -7,10 +7,21 @@ html,
 body,
 #root {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
+  overflow-x: hidden;
 }
-html {
-  scroll-behavior: smooth;
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+pre,
+code {
+  max-width: 100%;
 }

@@ -11,9 +11,11 @@ import Education from './sections/Education';
 
 export default function App() {
   return (
-    <div className='min-h-screen bg-slate-50 dark:bg-slate-950 antialiased'>
+    // ⬇️ add w-full + overflow-x-hidden so nothing can push the page wider
+    <div className='min-h-screen w-full overflow-x-hidden bg-slate-50 dark:bg-slate-950 antialiased'>
       <Navbar />
-      <main>
+      {/* ⬇️ keep main clamped too; add pt-16 if your navbar is fixed at top */}
+      <main className='w-full overflow-x-hidden'>
         <Hero />
         <About />
         <Projects />
