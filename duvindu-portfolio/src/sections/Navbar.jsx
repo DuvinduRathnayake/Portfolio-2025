@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-// import ThemeToggle from '../components/ThemeToggle'; // ← commented for now
+// import ThemeToggle from '../components/ThemeToggle';
 import logo from '../assets/logo.png';
 
 export default function Navbar() {
