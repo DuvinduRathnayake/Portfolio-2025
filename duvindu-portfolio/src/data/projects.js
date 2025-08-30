@@ -1,7 +1,42 @@
 import portfolio1 from '../assets/portfolio-1.png';
 import face from '../assets/face.jpg';
+import drywall from '../assets/drywall.png';
+import drywall1 from '../assets/drywall1.png';
 
 export const projects = [
+  {
+    title: 'Dimitry Drywall — React',
+    blurb:
+      'Local service website with hero carousel, pricing-led services, projects gallery, about, and a contact form with drag-and-drop file upload. Lightweight page-enter + scroll animations and route-aware scroll-to-top.',
+    stack: [
+      'React',
+      'React Router',
+      'Tailwind CSS',
+      'Vite',
+      'Formspree',
+      'Netlify',
+    ],
+    repo: 'https://github.com/DuvinduRathnayake/drywall-website',
+    demo: 'https://dimitrydrywall.netlify.app/',
+    shots: [
+      { src: drywall, alt: 'Home hero and trust badges' },
+      { src: drywall1, alt: 'Projects grid with modal viewer' },
+    ],
+    bullets: [
+      'Auto hero carousel (no libs)',
+      'Services with pricing chips + in-page nav',
+      'Projects gallery with modal viewer',
+      'About page: values, stats, process',
+      'Contact form + drag/drop uploader (Formspree)',
+      'Page-enter & scroll-reveal animations',
+      'Scroll-to-top on route change (hash-aware)',
+    ],
+    results: [
+      'Deployed on Netlify with SPA redirects',
+      'Lazy-loaded media, mobile-first layout',
+      'Accessible semantics & focus states',
+    ],
+  },
   {
     title: 'TaskMate — ASP.NET Core MVC + Dapper',
     blurb: 'Focused task manager with role-based auth and hand-tuned SQL.',

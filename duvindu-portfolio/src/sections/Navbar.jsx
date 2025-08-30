@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import ThemeToggle from '../components/ThemeToggle';
+// import ThemeToggle from '../components/ThemeToggle'; // ← commented for now
 import logo from '../assets/logo.png';
 
 export default function Navbar() {
@@ -9,7 +9,7 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
@@ -24,12 +24,14 @@ export default function Navbar() {
         ${scrolled ? 'shadow-sm' : 'shadow-none'}`}
     >
       <div className='mx-auto flex h-14 max-w-6xl items-center justify-between px-4'>
+        {/* Left: Logo */}
         <a href='#home' className='flex items-center gap-2'>
           <img src={logo} alt='DR Logo' className='h-12 w-12 object-contain' />
           <span className='font-semibold tracking-tight text-slate-900 dark:text-white'></span>
         </a>
 
-        <ul className='hidden gap-6 text-sm text-slate-800 dark:text-slate-300 md:flex'>
+        {/* Center: Nav */}
+        <ul className='hidden md:flex gap-6 text-sm text-slate-800 dark:text-slate-300'>
           <li>
             <a
               className='hover:text-indigo-600 dark:hover:text-indigo-400'
@@ -63,7 +65,14 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
-        <ThemeToggle />
+
+        {/* Right: placeholder keeps nav centered when ThemeToggle is removed */}
+        <div
+          className='hidden md:block'
+          style={{ width: 48, height: 48 }}
+          aria-hidden
+        />
+        {/* <ThemeToggle /> */}
       </div>
     </motion.header>
   );
