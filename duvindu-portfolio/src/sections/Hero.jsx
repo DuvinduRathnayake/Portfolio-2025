@@ -34,8 +34,10 @@ export default function Hero() {
             .NET + SQL + React — I ship clean features fast
           </h2>
           <p className='mt-4 max-w-xl text-slate-300'>
-            I build modern, scalable web experiences. Currently improving
-            TaskMate (ASP.NET + Dapper) and a resume optimizer.
+            I build modern, scalable web applications with clean, maintainable
+            code. Combining strong back-end expertise in .NET and SQL with
+            front-end development in React, I deliver fast, reliable features
+            that solve real business problems.
           </p>
 
           <div className='mt-6 flex flex-wrap gap-3'>
@@ -56,7 +58,7 @@ export default function Hero() {
           {/* Stat strip */}
           <div className='mt-6 grid grid-cols-3 gap-3 max-w-md text-center'>
             {[
-              { k: 'Years', v: '2+' },
+              { k: 'Years', v: '5+' },
               { k: 'Projects', v: '6' },
               { k: 'Focus', v: '.NET' },
             ].map((s) => (
