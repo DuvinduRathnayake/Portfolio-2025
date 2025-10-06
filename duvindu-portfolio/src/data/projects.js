@@ -79,25 +79,25 @@ export const projects = [
     bullets: ['Dark mode', 'Reusable components', 'Accessible animations'],
     results: ['Lighthouse 90+ a11y', 'Clean, scalable structure'],
   },
-  // {
-  //   title: 'Resume Optimizer (WIP)',
-  //   blurb: 'Analyze resumes vs job posts with ATS-style scoring & tips.',
-  //   stack: ['Node', 'React', 'MongoDB'],
-  //   repo: '',
-  //   demo: '',
-  //   shots: [
-  //     {
-  //       src: 'https://placehold.co/800x450/111827/94a3b8?text=Optimizer+Dashboard',
-  //       alt: 'Optimizer Dashboard',
-  //     },
-  //     {
-  //       src: 'https://placehold.co/800x450/0b1220/c7d2fe?text=Score+View',
-  //       alt: 'Score View',
-  //     },
-  //   ],
-  //   bullets: ['Parsing + scoring', 'Gap suggestions', 'Export-ready output'],
-  //   results: ['Faster tailoring for each role'],
-  // },
+  {
+    title: 'Resume Optimizer (WIP)',
+    blurb: 'Analyze resumes vs job posts with ATS-style scoring & tips.',
+    stack: ['Node', 'React', 'MongoDB'],
+    repo: '',
+    demo: '',
+    shots: [
+      {
+        src: 'https://placehold.co/800x450/111827/94a3b8?text=Optimizer+Dashboard',
+        alt: 'Optimizer Dashboard',
+      },
+      {
+        src: 'https://placehold.co/800x450/0b1220/c7d2fe?text=Score+View',
+        alt: 'Score View',
+      },
+    ],
+    bullets: ['Parsing + scoring', 'Gap suggestions', 'Export-ready output'],
+    results: ['Faster tailoring for each role'],
+  },
 
   {
     title: 'Face Recognition Project using Python',
