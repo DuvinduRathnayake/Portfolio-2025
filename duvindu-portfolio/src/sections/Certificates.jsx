@@ -20,7 +20,7 @@ const certs = [
     issuer: 'Udemy',
     icon: SiUdemy,
     issued: '—',
-    status: 'Planned',
+    status: 'In Progress',
     credentialUrl: '',
     skills: ['Scalability', 'Caching', 'Queues'],
   },
