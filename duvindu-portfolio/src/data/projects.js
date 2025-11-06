@@ -2,6 +2,7 @@ import portfolio1 from '../assets/portfolio-1.png';
 import face from '../assets/face.jpg';
 import drywall from '../assets/drywall.png';
 import drywall1 from '../assets/drywall1.png';
+import resume from '../assets/resumeanalyzer.png';
 
 export const projects = [
   {
@@ -82,17 +83,17 @@ export const projects = [
   {
     title: 'Resume Optimizer (WIP)',
     blurb: 'Analyze resumes vs job posts with ATS-style scoring & tips.',
-    stack: ['Node', 'React', 'MongoDB'],
-    repo: '',
+    stack: ['Next JS', 'React', 'Puter JS'],
+    repo: 'https://github.com/DuvinduRathnayake/AI-Resume-Analyzer',
     demo: '',
     shots: [
       {
-        src: 'https://placehold.co/800x450/111827/94a3b8?text=Optimizer+Dashboard',
-        alt: 'Optimizer Dashboard',
+        src: resume,
+        alt: 'Resume-analyzer.png',
       },
       {
-        src: 'https://placehold.co/800x450/0b1220/c7d2fe?text=Score+View',
-        alt: 'Score View',
+        src: resume,
+        alt: 'Resume-analyzer.png',
       },
     ],
     bullets: ['Parsing + scoring', 'Gap suggestions', 'Export-ready output'],
