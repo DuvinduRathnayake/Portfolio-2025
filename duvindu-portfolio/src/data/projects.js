@@ -81,24 +81,53 @@ export const projects = [
     results: ['Lighthouse 90+ a11y', 'Clean, scalable structure'],
   },
   {
-    title: 'Resume Optimizer (WIP)',
-    blurb: 'Analyze resumes vs job posts with ATS-style scoring & tips.',
-    stack: ['Next JS', 'React', 'Puter JS'],
+    title: 'AI Résumé Optimizer — Next.js + Puter.js',
+    blurb:
+      'ATS-style resume vs job post analyzer built on top of a ChatGPT-based open-source repo, adapted to Next.js with local-first storage via Puter.js.',
+    stack: ['Next.js', 'React', 'Puter.js', 'OpenAI API'],
     repo: 'https://github.com/DuvinduRathnayake/AI-Resume-Analyzer',
     demo: '',
     shots: [
       {
         src: resume,
-        alt: 'Resume-analyzer.png',
+        alt: 'AI Résumé Optimizer dashboard',
       },
       {
         src: resume,
-        alt: 'Resume-analyzer.png',
+        alt: 'Score and suggestions view',
       },
     ],
-    bullets: ['Parsing + scoring', 'Gap suggestions', 'Export-ready output'],
-    results: ['Faster tailoring for each role'],
+    bullets: [
+      'Built from a ChatGPT repo foundation (customized pipelines)',
+      'Next.js app with API routes for analysis',
+      'Puter.js for local-first file handling & persistence',
+      'ATS-style scoring, keyword gaps, tailored bullet suggestions',
+      'Export-ready output for quick edits',
+    ],
+    results: [
+      'Cuts tailoring time significantly; roadmap: auth + history + PDF export',
+    ],
   },
+
+  // {
+  //   title: 'Resume Optimizer (WIP)',
+  //   blurb: 'Analyze resumes vs job posts with ATS-style scoring & tips.',
+  //   stack: ['Next JS', 'React', 'Puter JS'],
+  //   repo: 'https://github.com/DuvinduRathnayake/AI-Resume-Analyzer',
+  //   demo: '',
+  //   shots: [
+  //     {
+  //       src: resume,
+  //       alt: 'Resume-analyzer.png',
+  //     },
+  //     {
+  //       src: resume,
+  //       alt: 'Resume-analyzer.png',
+  //     },
+  //   ],
+  //   bullets: ['Parsing + scoring', 'Gap suggestions', 'Export-ready output'],
+  //   results: ['Faster tailoring for each role'],
+  // },
 
   {
     title: 'Face Recognition Project using Python',
